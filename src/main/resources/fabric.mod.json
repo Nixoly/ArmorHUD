@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "armorhud",
+  "version": "${version}",
+  "name": "ArmorHUD",
+  "description": "Zırhların canlarını görmek için bir mod",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/armorhud/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "dev.nixoly.armorhud.Armorhud"
+    ]
+  },
+  "mixins": [
+    "armorhud.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
