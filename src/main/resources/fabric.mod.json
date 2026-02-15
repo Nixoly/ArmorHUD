@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "armorhud",
+  "version": "${version}",
+  "name": "ArmorHUD",
+  "description": "A customizable armor durability HUD overlay.",
+  "authors": [
+    "Nixoly"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/armorhud/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "dev.nixoly.armorhud.ArmorHud"
+    ],
+    "client": [
+      "dev.nixoly.armorhud.ArmorHudClient"
+    ],
+    "modmenu": [
+      "dev.nixoly.armorhud.integration.ModMenuPlugin"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}",
+    "java": ">=17"
+  },
+  "suggests": {
+    "cloth-config2": ">=11",
+    "modmenu": ">=7"
+  }
+}
